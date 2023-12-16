@@ -1,13 +1,8 @@
-import { createTable, updateTable } from './tabla.js';
-
 //--> Le pongo 1 por defecto a la cantidad <--//
 
 document.addEventListener("DOMContentLoaded", function () {
   const inputCant = document.getElementById("inputCant");
   inputCant.value = "1";
-  fetch("OradoresServlet")
-    .then(response => response.json())
-    .then(data => generarTabla(data));
 });
 
 //--> Cuando abro el documento hace foco en el primer input de nombre <--//
